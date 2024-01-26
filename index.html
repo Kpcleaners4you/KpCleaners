@@ -7,46 +7,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Pacifico', cursive; /* Curly font */
+            font-family: 'Pacifico', cursive;
             margin: 0;
             padding: 0;
-            background-color: #f0f5f5; /* Light gray background */
+            background-color: #f0f5f5;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
             min-height: 100vh;
+            text-align: center;
         }
 
         header {
-            background-color: #1565c0; /* Dark blue */
-            color: #ffc107; /* Yellow */
+            background-color: #1565c0;
+            color: #ffc107;
             text-align: center;
-            padding: 1.5em; /* Increased header size by 50% */
+            padding: 1.5em;
             border-radius: 10px 10px 0 0;
             width: 100%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         section {
-            position: relative; /* Added to allow positioning of the sticky image */
+            position: relative;
             padding: 2em;
-            background-color: #f0f5f5; /* Light gray background */
+            background-color: #f0f5f5;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin: 20px;
             text-align: center;
-            color: #333; /* Dark gray text */
+            color: #333;
         }
 
         img.sticky-image {
             width: 100%;
-            max-width: 400px; /* Adjust as needed */
+            max-width: 100%; /* Make the image responsive */
+            height: auto;
         }
 
         button {
-            background-color: #0d47a1; /* Darker blue */
-            color: #ffc107; /* Yellow */
+            background-color: #0d47a1;
+            color: #ffc107;
             padding: 15px 30px;
             border: none;
             border-radius: 5px;
@@ -58,7 +60,7 @@
         }
 
         button:hover {
-            background-color: #1565c0; /* Dark blue on hover */
+            background-color: #1565c0;
         }
 
         #contactForm {
@@ -83,16 +85,16 @@
             padding: 15px;
             margin-top: 5px;
             margin-bottom: 10px;
-            border: 2px solid #0d47a1; /* Darker blue border */
+            border: 2px solid #0d47a1;
             border-radius: 5px;
             box-sizing: border-box;
             font-size: 16px;
-            font-weight: normal; /* Adjusted font weight */
+            font-weight: normal;
         }
 
         footer {
-            background-color: #1565c0; /* Dark blue */
-            color: #ffc107; /* Yellow */
+            background-color: #1565c0;
+            color: #ffc107;
             text-align: center;
             padding: 1em;
             border-radius: 0 0 10px 10px;
@@ -100,42 +102,39 @@
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Make "We offer" look more like a header */
         section h3 {
-            font-size: 32px; /* Increased font size */
+            font-size: 24px;
             font-weight: bold;
             margin-bottom: 15px;
         }
 
-        /* Increase font size for services text */
         section li {
-            font-size: 24px; /* Increased font size */
+            font-size: 18px; /* Adjusted font size for better readability on mobile */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 style="font-size: 45px; margin-bottom: 0;">KPCleaners</h1>
-        <p style="font-size: 18px; margin-top: 5px;">Around the Clock Clean</p>
+        <h1 style="font-size: 36px; margin-bottom: 0;">KPCleaners</h1>
+        <p style="font-size: 16px; margin-top: 5px;">Around the Clock Clean</p>
     </header>
 
     <section>
-        <!-- Removed sticky properties from image element -->
-        <img src="<img src="pexels-tima-miroshnichenko-6195277.jpg" alt="Sticky Img" class="sticky-image">
+        <img src="pexels-tima-miroshnichenko-6195277.jpg" alt="Sticky Img" class="sticky-image">
         
-        <h2 style="font-size: 24px; color: #0d47a1;">Welcome to <span style="color: #ffc107;">KPCleaners</span>!</h2>
+        <h2 style="font-size: 20px; color: #0d47a1;">Welcome to <span style="color: #ffc107;">KPCleaners</span>!</h2>
         <h3>We offer</h3>
         <p style="font-size: 16px; line-height: 1.6;">
-            <li style="font-size: 24px;">commercial office cleaning</li> 
-            <li style="font-size: 24px;">residential</li> 
-            <li style="font-size: 24px;">vacation and air bnb resets</li>
-            <li style="font-size: 24px;">Deep cleaning for move in/move out</li>
+            <li>Commercial office cleaning</li> 
+            <li>Residential</li> 
+            <li>Vacation and Airbnb resets</li>
+            <li>Deep cleaning for move in/move out</li>
         </p>
         <button onclick="showContactForm()">Contact Us</button>
     </section>
 
     <section id="contactForm">
-        <h2 style="font-size: 24px; color: #0d47a1;">Contact <span style="color: #ffc107;">KPCleaners</span></h2>
+        <h2 style="font-size: 20px; color: #0d47a1;">Contact <span style="color: #ffc107;">KPCleaners</span></h2>
         <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -157,5 +156,4 @@
         }
     </script>
 </body>
-    </html>
-        
+</html>
