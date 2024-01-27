@@ -1,0 +1,16 @@
+# Example _config.yml for a Jekyll site on GitHub Pages
+
+title: KP Cleaners
+description: A business website for a company called KP Cleaners.
+url: "https://KPCleaners4you.github.io" # Update with your GitHub Pages URL
+baseurl: "/KPCleaner4you.github.io" # Set this if your site is not at the root of your repository
+
+theme: minima # Change this to the Jekyll theme you want to use
+
+# Other optional settings
+markdown: kramdown
+permalink: /:title/
+
+# GitHub Pages settings
+repository: KPCleaners4you/KPCleaners4you
+branch: main
